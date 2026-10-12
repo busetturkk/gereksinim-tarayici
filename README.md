@@ -23,3 +23,14 @@ Buluyor: ölçüsüz kelimeler, "bitti" tanımı olmayan maddeler, bariz çeliş
 
 Bulamıyor: dokümanda hiç geçmeyen iş kuralını. "Yetkisiz kullanıcı ne olur"
 sorusunu kimse yazmadıysa model de sormayabilir. O soru hâlâ analistin.
+
+## Gözlemler
+
+- Ayırıcı hatası: Son kullanıcıdan gelen metinde "--- DOKÜMAN ---" gibi ayraç
+  kullanıldığında, model bazı durumlarda bunu gereksinim metnine ait olmayan
+  bir bölüm gibi yorumlayıp çıkarma yapabilir. Bu yüzden ayraç eklenmesi sonrası
+  sonuçlar daha dikkatli incelenmelidir.
+- Yanlış pozitif: Bazı cümleler teknik olarak belirsiz görünse de aslında iş
+  kuralı olarak net olabilir; örneğin "hızlı" gibi bir kelime aynı anda
+  performans hedefi değil, kullanıcı algısı da olabilir. Bu tür durumlarda model
+  bulduğu işaretler, yazarın değerlendirmesine göre reddedilebilir.
