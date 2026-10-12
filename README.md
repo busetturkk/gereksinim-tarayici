@@ -1,4 +1,4 @@
-# gereksinim-tarayici
+# Gereksinim-tarayici
 
 Gereksinim dokümanını geliştirme başlamadan önce boşluk için tarar.
 
@@ -12,12 +12,6 @@ kabul kriteri, çelişki, açık soru.
 Son kararı dokümanı yazan verir — araç yerine düşünmez, önce düşündürür.
 
 ## Kullanım
-
-```
-pip install anthropic
-export ANTHROPIC_API_KEY=sk-ant-...
-python3 tarayici.py ornek.md
-```
 
 `ornek.md` bu depo için uydurulmuş bir dokümandır, hiçbir şirkete ait değildir.
 Bilerek boşluklu yazıldı: "hızlı", "uygun şekilde", "çok büyük" gibi ölçüsüz
